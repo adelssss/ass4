@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Observations in Aviation industry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Observations in Aviation industry</h1>
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date">
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date">
+        <label for="field">Select Field:</label>
+        <select id="field">
+            <option value="temperature">Temperature</option>
+            <option value="wind_speed">Wind Speed</option>
+            <option value="visibility">Visibility</option>
+        </select>
+        <label for="chart_type">Chart Type:</label>
+        <select id="chart_type">
+            <option value="line">Line</option>
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+        </select>
+        <button onclick="fetchData()">Fetch Data</button>
+
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
